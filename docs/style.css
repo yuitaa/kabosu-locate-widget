@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0,0,0,0);
+  font-family: "Yusei Magic", sans-serif;
+}
+
+.note {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 5px 5px 5px #0004;
+  text-shadow: 4px 3px 3px #999;
+  font-size: 2rem;
+  padding: 0.4rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  color: #ffffff;
+
+  background-color: #4e4e4eaa;
+
+  -webkit-text-stroke: 1px #000;
+  border-radius: 0 500px 500px 0;
+  border-top: 4px dashed #4f4e5e;
+  border-right: 4px dashed #4f4e5e;
+  border-bottom: 4px dashed #4f4e5e;
+}
+
+.swipe-out {
+  animation: swipeOut 0.8s ease-out forwards;
+}
+
+@keyframes swipeOut {
+  100% {
+    transform: translateX(-120%);
+  }
+}
+
+.new-note {
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
+  }
+}
